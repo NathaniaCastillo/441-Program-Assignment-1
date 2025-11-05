@@ -1,9 +1,9 @@
 import socket
 
-server = socket. socket(socket.AF_INET, socket.SOCK_STREAM) #specifying type of socket with internet, working with TCP sock as asked
+server = socket.socket(socket.AF_INET, socket.SOCK_STREAM) #specifying type of socket with internet, working with TCP sock as asked
 # just a server for accepting connections
 
-#Reminder that TP connection is when you actually have a connection and exchange messages over that connection vs UDP send and recieve without maintaing a connection
+#Reminder that TCP connection is when you actually have a connection and exchange messages over that connection vs UDP send and recieve without maintaing a connection
 
 #when hosting, use private ip
 server.bind(('0.0.0.0', 9999)) #binding with local IP address and specifying server port as 9999
